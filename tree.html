@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>树形图插件</title>
+  <link rel="stylesheet" href="./css/tree.css">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_1295321_vbzjvf7shw.css">
+</head>
+<body>
+  <div class="tree-wrapper">
+    <div class="tree" id="tree">
+        <ul class="level1">
+          <li>
+            <em>+</em><span>软件研发</span>
+            <ul class="level2">
+              <li>
+                <em>+</em><span>前端开发</span><i isBothOpen="false">全部打开/关闭</i>
+                <ul class="level3">
+                  <li>
+                    <em>+</em><span>设计类</span>
+                    <ul>
+                      <li><span>UI设计</span></li>
+                      <li><span>UE体验</span></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <em>+</em><span>技术类</span>
+                    <ul class="level4">
+                      <li><span>传统前端</span></li>
+                      <li><span>js工程师</span></li>
+                      <li><span>小程序开发</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <em>+</em><span>后端开发</span>
+                <ul>
+                  <li>
+                    <em>+</em><span>一般开发类</span>
+                    <ul>
+                      <li><span>java开发</span></li>
+                      <li><span>数据库开发</span></li>
+                    </ul>
+                  </li>
+                  <li>
+                      <em>+</em><span>算法</span>
+                      <ul>
+                        <li><span>机器学习</span></li>
+                        <li><span>深度学习</span></li>
+                        <li><span>大数据</span></li>
+                      </ul>
+                    </li>
+                </ul>
+            </ul>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <script src="./js/tree.js"></script>
+  <script>
+    var tree = new masiaPlugin.Tree({
+      id: 'tree',
+      clickCb: function (currentEle) {
+        console.log(currentEle)
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+ul {
+  list-style: none;
+}
+.tree-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+.tree {
+  height: 100%;
+  width: 300px;
+  background: -webkit-linear-gradient(top left, lightcyan, lightpink);
+  overflow: auto;
+  padding: 10px;
+}
+.tree ul li {
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.tree ul li em {
+  height: 16px;
+  width: 16px;
+  padding: 2px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: darkgrey;
+  text-align: center;
+  line-height: 12px;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  top: 7px;
+  font-style: normal;
+  font-size: 16px;
+  color: #fff;
+}
+.tree ul li span {
+  line-height: 30px;
+  font-size: 14px;
+  display: inline-block;
+}
+.tree ul li i {
+  font-style: normal;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  background-color: cadetblue;
+  line-height: 12px;
+  color: #fff;
+  border-radius: 3px;
+  margin: 4px;
+  padding: 0 3px;
+}
+.tree ul:not(.level1) {
+  display: none;
+}
+.ulActive {
+  display: block!important;
+}
+.red {
+  color: red;
+}
